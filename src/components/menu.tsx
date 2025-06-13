@@ -1,4 +1,4 @@
-import { Menu } from "lucide-react";
+import { ExternalLink, Menu } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
 import { Button } from "./ui/button";
@@ -56,6 +56,18 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href="https://my.meetergo.com/comp_ex/beratung"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base font-medium transition-colors hover:text-primary"
+                >
+                  <span className="flex">
+                    Termin <ExternalLink />
+                  </span>
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
