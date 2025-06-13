@@ -19,6 +19,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="Impressum" element={<Impressum />} />
           <Route path="Fernwartung" element={<Fernwartung />} />
           <Route path="OEM" element={<Oem />} />
+          <Route path="*" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
